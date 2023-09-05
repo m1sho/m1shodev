@@ -43,10 +43,11 @@ body {
     display: flex; /* Use flexbox for horizontal alignment */
     justify-content: center; /* Horizontally center the list items */
     align-items: center; /* Vertically center the list items */
+    padding: 0; /* Remove the default padding */
 }
 
 #nav li {
-    margin: 0 20px;
+    margin: 0 15px; /* Adjust the margin to fine-tune the alignment */
 }
 
 #nav a {
