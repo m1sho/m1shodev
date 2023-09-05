@@ -89,14 +89,3 @@ body {
     font-size: 1rem;
     color: #ccc;
 }
-
-/* Center menu items with the website heading */
-#nav ul {
-    margin-top: 20px; /* Adjust this margin to align with the header */
-}
-
-/* Adjust the navigation container to center the menu items */
-#nav .container {
-    display: flex;
-    justify-content: center;
-}
