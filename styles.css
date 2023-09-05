@@ -2,15 +2,15 @@
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
+    color: #fff; /* Set default text color to white */
 }
 
 /* Set futuristic fonts and colors */
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Use Roboto Light for a sleek look */
-    color: #fff;
     background-color: #111; /* Dark futuristic background color */
-    background-image: url('images/bg.jpg'); /* Add your background image URL */
+    background-image: url('background.jpg'); /* Add your background image URL */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -58,7 +58,7 @@ body {
 }
 
 #nav a:hover {
-    color: #00aaff; /* Futuristic accent color */
+    color: #ccc; /* Slight gray color on hover */
 }
 
 /* Center elements horizontally */
@@ -90,3 +90,37 @@ body {
     font-size: 1rem;
     color: #ccc;
 }
+
+/* Add this CSS to style the subheadings and project lists */
+
+/* Subheadings */
+.subheading {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #00aaff; /* Futuristic accent color */
+    transition: color 0.3s;
+}
+
+.subheading:hover {
+    color: #ccc; /* Slight gray color on hover */
+}
+
+/* Project Lists (initially hidden) */
+.project-list {
+    display: none;
+    background-color: rgba(17, 17, 17, 0.7); /* Slightly transparent background */
+    border: 1px solid #00aaff; /* Futuristic accent color border */
+    padding: 20px;
+    margin-top: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.project-list p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Show project list on subheading click */
+#web-development:hover + #web-dev-projects,
