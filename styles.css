@@ -120,7 +120,7 @@ body {
 
 /* Remove max-width from Project Lists */
 .project-list {
-    text-align: left;
+    
     padding: 20px;
     border: none; /* Remove the border */
     margin-top: 10px; /* Add margin to separate from the subheading */
