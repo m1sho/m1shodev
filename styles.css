@@ -122,6 +122,17 @@ body {
     color: #fff; /* Set font color to white */
 }
 
+/* Center and underline project titles */
+.project-list h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Add space below project descriptions */
+.project-list p {
+    margin-bottom: 10px;
+}
+
 /* Remove the blue underline for links */
 .project-list a {
     text-decoration: none;
