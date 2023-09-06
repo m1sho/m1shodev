@@ -116,7 +116,7 @@ body {
 /* Project Background Styles */
 .project-background {
     display: none; /* Initially hidden */
-    background-color: rgba(0, 0, 0, 0.7); /* Initial transparent background */
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
     position: fixed;
     top: 50%; /* Center vertically */
     left: 0;
@@ -129,18 +129,23 @@ body {
     transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for a smooth effect */
 }
 
-/* Project Lists */
+/* Remove max-width from Project Lists */
 .project-list {
     text-align: left;
-    max-width: 500px;
     padding: 20px;
     border: 1px solid #fff;
-    background-color: #111; /* Dark futuristic background for lists */
+    background-color: rgba(17, 17, 17, 0.7); /* Transparent background */
 }
 
 .project-list p {
     color: #fff; /* Set font color to white */
     font-size: 1.2rem;
+}
+
+/* Projects Section Text Color */
+#projects h2,
+.subheading {
+    color: #fff; /* Set font color to white */
 }
 
 /* Remove blue fonts */
