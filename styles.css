@@ -107,27 +107,10 @@ body {
     margin-top: 20px;
     color: #fff; /* Set font color to white */
     transition: color 0.3s;
-    text-decoration: none; /* Remove the underline */
 }
 
 .subheading:hover {
     color: #ccc; /* Slight gray color on hover */
-}
-
-/* Project Background Styles */
-.project-background {
-    display: none; /* Initially hidden */
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
-    position: fixed;
-    top: 50%; /* Center vertically */
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for a smooth effect */
 }
 
 /* Remove max-width from Project Lists */
@@ -135,7 +118,6 @@ body {
     text-align: left;
     padding: 20px;
     border: none; /* Remove the border */
-    background-color: transparent; /* Remove the background color */
     margin-top: 10px; /* Add margin to separate from the subheading */
     color: #fff; /* Set font color to white */
 }
