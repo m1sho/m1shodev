@@ -127,17 +127,7 @@ body {
     align-items: center;
     z-index: 1;
     transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for a smooth effect */
-}
-
-/* Close button styles */
-.close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.5rem;
-    z-index: 2;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
 /* Remove max-width from Project Lists */
@@ -163,3 +153,5 @@ body {
 a {
     color: #fff; /* Set font color to white for all links */
 }
+
+/* ... (Other CSS rules) */
