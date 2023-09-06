@@ -82,14 +82,22 @@ body {
 
 /* Footer */
 #footer {
-    text-align: center;
+    background-color: transparent; /* Make the background color transparent */
     padding: 20px 0;
-    background-color: #222; /* Slightly darker background for the footer */
+    text-align: center;
 }
 
 #footer p {
     font-size: 1rem;
     color: #ccc;
+}
+
+/* Project Images */
+.project-image img {
+    max-width: 300px; /* Set the maximum width for project images */
+    max-height: 300px; /* Set the maximum height for project images */
+    display: block; /* Center the images horizontally */
+    margin: 0 auto;
 }
 
 /* Subheadings */
@@ -118,7 +126,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for smooth effect */
+    transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for a smooth effect */
 }
 
 .project-list {
