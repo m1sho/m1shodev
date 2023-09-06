@@ -1,163 +1,139 @@
-/* Reset some default styles */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-    color: #fff; /* Set default text color to white */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishov Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Jean Arraki</h1>
+        <p>Web Developer | Photographer | Programmer</p>
+    </header>
 
-/* Set futuristic fonts and colors */
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300; /* Use Roboto Light for a sleek look */
-    background-color: #111; /* Dark futuristic background color */
-    background-image: url('images/bg.jpg'); /* Add your background image URL */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="container">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-/* Header Section */
-#header {
-    text-align: center;
-    padding: 100px 0;
-}
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- Subheadings for categories -->
+            <div class="subheading" id="web-development">Web Development</div>
+            <!-- Web Development Projects -->
+            <div class="project-list" id="web-dev-projects">
+                <!-- Project 1 -->
+                <div class="project">
+                    <h3 class="project-title">Zenith2 Construction</h3>
+                    <div class="project-image">
+                        <img src="site1.jpg" alt="Web Project 1">
+                    </div>
+                    <div class="project-description">
+                        <p>Modern, sleek site for Mid-Sized Construction Company.</p>
+                    </div>
+                </div>
 
-#header h1 {
-    font-size: 3rem;
-}
+                <!-- Project 2 -->
+                <div class="project">
+                    <h3 class="project-title">Richmond-Zhoushan Site</h3>
+                    <div class="project-image">
+                        <img src="site2.jpg" alt="Web Project 2">
+                    </div>
+                    <div class="project-description">
+                        <p>WordPress site for the sister city commission between Zhoushan, China, and Richmond, USA.</p>
+                    </div>
+                </div>
 
-#header p {
-    font-size: 1.2rem;
-}
+                <!-- Project 3 -->
+                <div class="project">
+                    <h3 class="project-title">Photography Portfolio</h3>
+                    <div class="project-image">
+                        <img src="site3.jpg" alt="Web Project 3">
+                    </div>
+                    <div class="project-description">
+                        <p>Modern, sleek photography portfolio using CSS, JS, and HTML.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="project-category">
 
-/* Navigation */
-#nav {
-    background-color: transparent;
-    text-align: center;
-    padding: 20px 0;
-}
+            <div class="subheading" id="apps">Apps</div>
+            <!-- App Projects -->
+            <div class="project-list" id="apps-projects">
+                <!-- Project 1 -->
+                <div class="project">
+                    <h3 class="project-title">nVert</h3>
+                    <div class="project-image">
+                        <img src="app1.jpg" alt="App Project 1">
+                    </div>
+                    <div class="project-description">
+                        <p>Python app using numpy and other image libraries to invert a scanned negative quicker than you can rename a file.</p>
+                    </div>
+                </div>
 
-#nav ul {
-    list-style: none;
-    display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: center; /* Horizontally center the list items */
-    align-items: center; /* Vertically center the list items */
-    padding: 0; /* Remove the default padding */
-}
+                <!-- Project 2 -->
+                <div class="project">
+                    <h3 class="project-title">MetaCleanPY</h3>
+                    <div class="project-image">
+                        <img src="app2.jpg" alt="App Project 2">
+                    </div>
+                    <div class="project-description">
+                        <p>File metadata cleaner using Tkinter.</p>
+                    </div>
+                </div>
 
-#nav li {
-    margin: 0 15px; /* Adjust the margin to fine-tune the alignment */
-}
+                <!-- Project 3 -->
+                <div class="project">
+                    <h3 class="project-title">KazakhWotD3</h3>
+                    <div class="project-image">
+                        <img src="ap3.jpg" alt="App Project 3">
+                    </div>
+                    <div class="project-description">
+                        <p>"Word of the Day" widget for learners of Kazakh that is automatically translated and stored in an excel using PyQt5.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-#nav a {
-    color: #fff; /* Set the font color to white */
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Tinkerer and Creator in trades including Programming, Web Development, Film Photography, and Vintage Audio.</p>
+            <p>Photography Site</p>
+            <p><a href="ArrakiCV.pdf" download>Download Resume (PDF)</a></p>
+        </div>
+    </section>
 
-#nav a:hover {
-    color: #fff; /* Keep font color white on hover */
-}
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email</p>
+            <p>LinkedIn</p>
+            <p>Github</p>
+            <!-- Add your contact information and form here -->
+        </div>
+    </section>
 
-/* Center elements horizontally */
-.container {
-    max-width: 800px;
-    margin: 0 auto; /* Center the container horizontally */
-    text-align: center;
-    padding: 80px 0;
-}
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy;m1sho 2023</p>
+    </footer>
 
-.container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #fff; /* Set font color to white */
-}
-
-.container p {
-    font-size: 1.2rem;
-    color: #fff; /* Set font color to white */
-}
-
-/* Footer */
-#footer {
-    background-color: transparent; /* Make the background color transparent */
-    padding: 20px 0;
-    text-align: center;
-}
-
-#footer p {
-    font-size: 1rem;
-    color: #ccc;
-}
-
-/* Project Images */
-.project-image img {
-    max-width: 300px; /* Set the maximum width for project images */
-    max-height: 300px; /* Set the maximum height for project images */
-    display: block; /* Center the images horizontally */
-    margin: 0 auto;
-}
-
-/* Add underlines to project titles */
-.project-title {
-    text-decoration: underline;
-}
-
-/* Add spacing between Web Development and App Projects */
-.project-category {
-    margin-bottom: 4em; /* Add four lines of spacing */
-}
-
-/* Subheadings */
-.subheading {
-    cursor: pointer;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    color: #fff; /* Set font color to white */
-    transition: color 0.3s;
-}
-
-.subheading:hover {
-    color: #ccc; /* Slight gray color on hover */
-}
-
-/* Project Background Styles */
-.project-background {
-    display: none; /* Initially hidden */
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
-    position: fixed;
-    top: 50%; /* Center vertically */
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for a smooth effect */
-}
-
-/* Close button for project background */
-.close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
-}
-
-/* Remove max-width from Project Lists */
-.project-list {
-    text-align: left;
-    padding: 20px;
-    border: 1px solid #fff;
-    background-color: rgba(17, 17, 17, 0.7); /* Transparent background */
-}
-
-.project-list p {
-    color: #fff; /* Set font color to white */
-    font-size: 1.2rem;
-}
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
