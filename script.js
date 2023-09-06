@@ -1,37 +1,27 @@
-// Get project background elements
-const webDevBackground = document.getElementById('web-dev-background');
-const appsBackground = document.getElementById('apps-background');
-
-// Get subheading elements
-const webDevSubheading = document.getElementById('web-development');
-const appsSubheading = document.getElementById('apps');
+// JavaScript for opening/closing project backgrounds
+const subheadings = document.querySelectorAll('.subheading');
+const projectBackgrounds = document.querySelectorAll('.project-background');
 
 // Add click event listeners to subheadings
-webDevSubheading.addEventListener('click', () => {
-    toggleProjectBackground(webDevBackground);
-});
+subheadings.forEach((subheading, index) => {
+    subheading.addEventListener('click', () => {
+        // Close all project backgrounds
+        projectBackgrounds.forEach((background, bgIndex) => {
+            if (bgIndex !== index) {
+                background.style.display = 'none';
+            }
+        });
 
-appsSubheading.addEventListener('click', () => {
-    toggleProjectBackground(appsBackground);
-});
-
-// Function to toggle project background
-function toggleProjectBackground(background) {
-    // Close all project backgrounds
-    closeAllProjectBackgrounds();
-
-    // Toggle the selected background
-    background.style.display = 'flex';
-
-    // Close button
-    const closeButton = background.querySelector('.close-button');
-    closeButton.addEventListener('click', () => {
-        background.style.display = 'none';
+        // Toggle the display of the corresponding project background
+        projectBackgrounds[index].style.display =
+            projectBackgrounds[index].style.display === 'block' ? 'none' : 'block';
     });
-}
+});
 
-// Function to close all project backgrounds
-function closeAllProjectBackgrounds() {
-    webDevBackground.style.display = 'none';
-    appsBackground.style.display = 'none';
-}
+// Close project backgrounds when the close button is clicked
+const closeButtons = document.querySelectorAll('.close-button');
+closeButtons.forEach((closeButton, index) => {
+    closeButton.addEventListener('click', () => {
+        projectBackgrounds[index].style.display = 'none';
+    });
+});
