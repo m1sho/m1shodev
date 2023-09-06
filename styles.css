@@ -105,7 +105,7 @@ body {
     color: #ccc; /* Slight gray color on hover */
 }
 
-/* Project Lists and Background Animation */
+/* Project Background Styles */
 .project-background {
     display: none;
     background-color: rgba(0, 0, 0, 0.7); /* Initial transparent background */
