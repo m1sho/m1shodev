@@ -96,26 +96,32 @@ body {
 .project h3 {
     text-align: center;
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Slightly smaller font size for project titles */
     margin-bottom: 20px;
 }
 
-/* Project Images and Descriptions */
-.project {
-    display: flex; /* Use flexbox to align image and description */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    margin-bottom: 20px; /* Add spacing between projects */
+/* Project Lists */
+.project-list {
     text-align: left; /* Align text to the left */
+    padding: 20px;
+    border: none; /* Remove the border */
+    margin-top: 10px; /* Add margin to separate from the subheading */
+    color: #fff; /* Set font color to white */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Add space between items */
 }
 
-.project-image img {
-    max-width: 300px; /* Set maximum width for the image */
-    margin-right: 20px; /* Add spacing between image and description */
+/* Project Descriptions */
+.project-list p {
+    margin-bottom: 10px;
+    max-width: 60%; /* Set maximum width for descriptions */
 }
 
-.project-description {
-    max-width: 60%; /* Set maximum width for the description */
+/* Project Images */
+.project-list img {
+    max-width: 100px; /* Set maximum width for images */
+    margin-left: 20px; /* Add spacing between image and description */
 }
 
 /* Subheadings */
@@ -131,24 +137,9 @@ body {
     color: #ccc; /* Slight gray color on hover */
 }
 
-/* Remove max-width from Project Lists */
-.project-list {
-    text-align: left;
-    padding: 20px;
-    border: none; /* Remove the border */
-    margin-top: 10px; /* Add margin to separate from the subheading */
-    color: #fff; /* Set font color to white */
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
 }
-
-/* Add space below project descriptions */
-.project-list p {
-    margin-bottom: 10px;
-}
-
-/* Remove the blue underline for links */
-.project-list a {
-    text-decoration: none;
-    color: #fff; /* Set font color to white for all links */
-}
-
-/* ... (Other CSS rules) */
