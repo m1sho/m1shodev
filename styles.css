@@ -92,36 +92,12 @@ body {
     color: #ccc;
 }
 
-/* Project Titles */
-.project h3 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 1.4rem; /* Slightly smaller font size for project titles */
-    margin-bottom: 20px;
-}
-
-/* Project Lists */
-.project-list {
-    text-align: left; /* Align text to the left */
-    padding: 20px;
-    border: none; /* Remove the border */
-    margin-top: 10px; /* Add margin to separate from the subheading */
-    color: #fff; /* Set font color to white */
-    display: flex; /* Use flexbox to arrange items horizontally */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Add space between items */
-}
-
-/* Project Descriptions */
-.project-list p {
-    margin-bottom: 10px;
-    max-width: 60%; /* Set maximum width for descriptions */
-}
-
 /* Project Images */
-.project-list img {
-    max-width: 100px; /* Set maximum width for images */
-    margin-left: 20px; /* Add spacing between image and description */
+.project-image img {
+    max-width: 300px; /* Set the maximum width for project images */
+    max-height: 300px; /* Set the maximum height for project images */
+    display: block; /* Center the images horizontally */
+    margin: 0 auto;
 }
 
 /* Subheadings */
@@ -137,9 +113,44 @@ body {
     color: #ccc; /* Slight gray color on hover */
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    body {
-        background-size: cover;
-    }
+/* Project Titles */
+.project h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.4rem; /* Slightly smaller font size for project titles */
+    margin-bottom: 20px;
+}
+
+/* Project Lists */
+.project-list {
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+    border: none; /* Remove the border */
+    margin-top: 10px; /* Add margin to separate from the subheading */
+    color: #fff; /* Set font color to white */
+}
+
+/* Project Content */
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Project Descriptions */
+.project-list p {
+    margin-bottom: 10px;
+    max-width: 60%; /* Set maximum width for descriptions */
+}
+
+/* Project Images */
+.project-list img {
+    max-width: 100px; /* Set maximum width for images */
+    margin-left: 20px; /* Add spacing between image and description */
+}
+
+/* Add space between projects */
+.project-divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
