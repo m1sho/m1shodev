@@ -107,7 +107,7 @@ body {
 
 /* Project Background Styles */
 .project-background {
-    display: none;
+    display: none; /* Initially hidden */
     background-color: rgba(0, 0, 0, 0.7); /* Initial transparent background */
     position: fixed;
     top: 0;
