@@ -1,4 +1,4 @@
-// JavaScript to handle the click event on subheadings
+// JavaScript to handle the click event on subheadings and show/hide the project background
 
 document.addEventListener("DOMContentLoaded", function () {
     const webDevSubheading = document.getElementById("web-development");
@@ -26,4 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     appsSubheading.addEventListener("click", function () {
         toggleProjectBackground(appsProjectBackground);
     });
+
+    // Initially hide project backgrounds
+    webDevProjectBackground.style.display = "none";
+    appsProjectBackground.style.display = "none";
 });
