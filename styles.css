@@ -105,7 +105,7 @@ body {
     cursor: pointer;
     font-size: 1.5rem;
     margin-top: 20px;
-    color: #00aaff; /* Futuristic accent color */
+    color: #fff; /* Set font color to white */
     transition: color 0.3s;
 }
 
@@ -118,7 +118,7 @@ body {
     display: none; /* Initially hidden */
     background-color: rgba(0, 0, 0, 0.7); /* Initial transparent background */
     position: fixed;
-    top: 0;
+    top: 50%; /* Center vertically */
     left: 0;
     width: 100%;
     height: 100%;
@@ -129,6 +129,7 @@ body {
     transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for a smooth effect */
 }
 
+/* Project Lists */
 .project-list {
     text-align: left;
     max-width: 500px;
@@ -142,21 +143,9 @@ body {
     font-size: 1.2rem;
 }
 
-/* Sections */
-#projects {
-    margin: 0 auto; /* Center the section horizontally */
-    text-align: center;
-    padding: 80px 0;
-}
-
-#projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #00aaff; /* Futuristic accent color */
-}
-
-#projects p {
-    font-size: 1.2rem;
+/* Remove blue fonts */
+a {
+    color: #fff; /* Set font color to white for all links */
 }
 
 /* ... (Other CSS rules) */
