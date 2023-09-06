@@ -100,16 +100,6 @@ body {
     margin: 0 auto;
 }
 
-/* Add underlines to project titles */
-.project-title {
-    text-decoration: underline;
-}
-
-/* Add spacing between Web Development and App Projects */
-.project-category {
-    margin-bottom: 4em; /* Add four lines of spacing */
-}
-
 /* Subheadings */
 .subheading {
     cursor: pointer;
@@ -117,6 +107,7 @@ body {
     margin-top: 20px;
     color: #fff; /* Set font color to white */
     transition: color 0.3s;
+    text-decoration: none; /* Remove the underline */
 }
 
 .subheading:hover {
@@ -139,25 +130,20 @@ body {
     transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for a smooth effect */
 }
 
-/* Close button for project background */
-.close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
-}
-
 /* Remove max-width from Project Lists */
 .project-list {
     text-align: left;
     padding: 20px;
-    border: 1px solid #fff;
-    background-color: rgba(17, 17, 17, 0.7); /* Transparent background */
+    border: none; /* Remove the border */
+    background-color: transparent; /* Remove the background color */
+    margin-top: 10px; /* Add margin to separate from the subheading */
+    color: #fff; /* Set font color to white */
 }
 
-.project-list p {
-    color: #fff; /* Set font color to white */
-    font-size: 1.2rem;
+/* Remove the blue underline for links */
+.project-list a {
+    text-decoration: none;
+    color: #fff; /* Set font color to white for all links */
 }
+
+/* ... (Other CSS rules) */
