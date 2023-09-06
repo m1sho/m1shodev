@@ -1,34 +1,37 @@
-// Add event listeners for subheading clicks
-document.getElementById("web-development").addEventListener("click", function () {
-    toggleProjectBackground("web-dev-background");
+// Get project background elements
+const webDevBackground = document.getElementById('web-dev-background');
+const appsBackground = document.getElementById('apps-background');
+
+// Get subheading elements
+const webDevSubheading = document.getElementById('web-development');
+const appsSubheading = document.getElementById('apps');
+
+// Add click event listeners to subheadings
+webDevSubheading.addEventListener('click', () => {
+    toggleProjectBackground(webDevBackground);
 });
 
-document.getElementById("programming").addEventListener("click", function () {
-    toggleProjectBackground("programming-background");
-});
-
-// Add event listeners for close button clicks
-document.getElementById("web-dev-close").addEventListener("click", function (event) {
-    event.stopPropagation();
-    toggleProjectBackground("web-dev-background");
-});
-
-document.getElementById("programming-close").addEventListener("click", function (event) {
-    event.stopPropagation();
-    toggleProjectBackground("programming-background");
+appsSubheading.addEventListener('click', () => {
+    toggleProjectBackground(appsBackground);
 });
 
 // Function to toggle project background
-function toggleProjectBackground(backgroundId) {
-    var background = document.getElementById(backgroundId);
-    if (background.style.display === "block") {
-        background.style.display = "none";
-    } else {
-        // Hide all backgrounds before showing the clicked one
-        var allBackgrounds = document.querySelectorAll(".project-background");
-        for (var i = 0; i < allBackgrounds.length; i++) {
-            allBackgrounds[i].style.display = "none";
-        }
-        background.style.display = "block";
-    }
+function toggleProjectBackground(background) {
+    // Close all project backgrounds
+    closeAllProjectBackgrounds();
+
+    // Toggle the selected background
+    background.style.display = 'flex';
+
+    // Close button
+    const closeButton = background.querySelector('.close-button');
+    closeButton.addEventListener('click', () => {
+        background.style.display = 'none';
+    });
+}
+
+// Function to close all project backgrounds
+function closeAllProjectBackgrounds() {
+    webDevBackground.style.display = 'none';
+    appsBackground.style.display = 'none';
 }
