@@ -97,7 +97,7 @@ body {
     cursor: pointer;
     font-size: 1.5rem;
     margin-top: 20px;
-    color: #fff; /* Set font color to white */
+    color: #00aaff; /* Futuristic accent color */
     transition: color 0.3s;
 }
 
@@ -105,21 +105,28 @@ body {
     color: #ccc; /* Slight gray color on hover */
 }
 
-/* Project Lists Animation (initially hidden) */
-.project-list {
+/* Project Lists and Background Animation */
+.project-background {
     display: none;
     background-color: rgba(0, 0, 0, 0.7); /* Initial transparent background */
-    border: 1px solid #fff; /* Set border color to white */
-    padding: 20px;
-    margin-top: 10px;
-    max-width: 500px;
-    margin: 0 auto;
     position: fixed;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%);
-    z-index: -1; /* Place behind other content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
     transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for smooth effect */
+}
+
+.project-list {
+    text-align: left;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #fff;
+    background-color: #111; /* Dark futuristic background for lists */
 }
 
 .project-list p {
