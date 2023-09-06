@@ -98,6 +98,13 @@ body {
     display: block; /* Center the images horizontally */
     margin: 0 auto;
 }
+.project-image {
+    max-width: 300px; /* Set the maximum width for project images */
+    max-height: 300px; /* Set the maximum height for project images */
+    display: block; /* Center the images horizontally */
+    margin: 0 auto; /* Center the images horizontally */
+}
+
 
 /* Subheadings */
 .subheading {
