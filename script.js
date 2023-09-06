@@ -1,31 +1,29 @@
-// JavaScript to handle the click event on project links
+// JavaScript to handle the click event on subheadings
 
 document.addEventListener("DOMContentLoaded", function () {
-    const webDevLink = document.querySelector('a[href="#web-dev-projects"]');
-    const appsLink = document.querySelector('a[href="#apps-projects"]');
-    const webDevProjectList = document.getElementById("web-dev-projects");
-    const appsProjectList = document.getElementById("apps-projects");
+    const webDevSubheading = document.getElementById("web-development");
+    const appsSubheading = document.getElementById("apps");
+    const webDevProjectBackground = document.getElementById("web-dev-projects");
+    const appsProjectBackground = document.getElementById("apps-projects");
 
-    // Function to toggle project list visibility
-    function toggleProjectList(projectList) {
-        if (projectList.style.display === "block") {
-            // Hide project list
-            projectList.style.display = "none";
+    // Function to toggle project background visibility
+    function toggleProjectBackground(projectBackground) {
+        if (projectBackground.style.display === "block") {
+            // Hide project background
+            projectBackground.style.display = "none";
         } else {
-            // Show project list
-            projectList.style.display = "block";
+            // Show project background
+            projectBackground.style.display = "block";
         }
     }
 
-    // Event listener for Web Development link
-    webDevLink.addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        toggleProjectList(webDevProjectList);
+    // Event listener for Web Development subheading
+    webDevSubheading.addEventListener("click", function () {
+        toggleProjectBackground(webDevProjectBackground);
     });
 
-    // Event listener for Apps link
-    appsLink.addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        toggleProjectList(appsProjectList);
+    // Event listener for Apps subheading
+    appsSubheading.addEventListener("click", function () {
+        toggleProjectBackground(appsProjectBackground);
     });
 });
