@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Use Roboto Light for a sleek look */
     background-color: #111; /* Dark futuristic background color */
-    background-image: url('images/bg.jpg'); /* Add your background image URL */
+    background-image: url('background.jpg'); /* Add your background image URL */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -51,14 +51,14 @@ body {
 }
 
 #nav a {
-    color: #fff;
+    color: #fff; /* Set the font color to white */
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s;
 }
 
 #nav a:hover {
-    color: #ccc; /* Slight gray color on hover */
+    color: #fff; /* Keep font color white on hover */
 }
 
 /* Center elements horizontally */
@@ -72,11 +72,12 @@ body {
 .container h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #00aaff; /* Futuristic accent color */
+    color: #fff; /* Set font color to white */
 }
 
 .container p {
     font-size: 1.2rem;
+    color: #fff; /* Set font color to white */
 }
 
 /* Footer */
@@ -91,14 +92,12 @@ body {
     color: #ccc;
 }
 
-/* Add this CSS to style the subheadings and project lists */
-
 /* Subheadings */
 .subheading {
     cursor: pointer;
     font-size: 1.5rem;
     margin-top: 20px;
-    color: #00aaff; /* Futuristic accent color */
+    color: #fff; /* Set font color to white */
     transition: color 0.3s;
 }
 
@@ -106,21 +105,24 @@ body {
     color: #ccc; /* Slight gray color on hover */
 }
 
-/* Project Lists (initially hidden) */
+/* Project Lists Animation (initially hidden) */
 .project-list {
     display: none;
-    background-color: rgba(17, 17, 17, 0.7); /* Slightly transparent background */
-    border: 1px solid #00aaff; /* Futuristic accent color border */
+    background-color: rgba(0, 0, 0, 0.7); /* Initial transparent background */
+    border: 1px solid #fff; /* Set border color to white */
     padding: 20px;
     margin-top: 10px;
     max-width: 500px;
     margin: 0 auto;
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Place behind other content */
+    transition: opacity 0.3s, z-index 0s 0.3s; /* Transition opacity with delay for smooth effect */
 }
 
 .project-list p {
-    color: #fff;
+    color: #fff; /* Set font color to white */
     font-size: 1.2rem;
 }
-
-/* Show project list on subheading click */
-#web-development:hover + #web-dev-projects,
