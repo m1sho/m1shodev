@@ -1,4 +1,6 @@
-/* Reset some default styles */
+#nav ul li a {
+    text-decoration: underline;
+}/* Reset some default styles */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
