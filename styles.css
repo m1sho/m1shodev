@@ -7,14 +7,17 @@ body, h1, h2, h3, p {
 
 /* Set futuristic fonts and colors */
 body {
+body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Use Roboto Light for a sleek look */
-    background-color: #111; /* Dark futuristic background color */
+    background-color: rgba(17, 17, 17, 0.9); /* Darken the background slightly */
     background-image: url('images/bg.jpg'); /* Add your background image URL */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    filter: blur(5px); /* Apply a slight blur to the background image */
+}
 }
 
 /* Header Section */
