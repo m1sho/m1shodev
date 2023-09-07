@@ -21,7 +21,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Use Roboto Light for a sleek look */
     background-color: rgba(17, 17, 17, 0.9); /* Darken the background slightly */
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
