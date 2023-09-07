@@ -21,12 +21,15 @@ body {
   
 }
 #bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
-    z-index: -1; /* Place it behind other content */
+    width: auto;
+    height: auto;
+    z-index: -1; /* Place the video behind other content */
     filter: blur(10px); /* Blur the background video */
 }
 .bg-video::before {
