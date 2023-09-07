@@ -146,5 +146,14 @@ body {
 .project-list.show {
    display: block; /* Show project list when the 'show' class is applied */
 }
+/* Change link color to white */
+#contact a {
+   color: #fff; /* Set font color to white for links in the "Contact" section */
+}
+/* Change link color to white */
+#about a {
+   color: #fff; /* Set font color to white for links in the "About" section */
+}
+
 
 /* ... (Other CSS rules) */
