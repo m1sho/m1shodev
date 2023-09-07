@@ -20,6 +20,16 @@ body {
     background-color: transparent; /* Remove background color */
   
 }
+.bg-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.gif'); /* Replace with the path to your GIF file */
+    background-size: cover;
+    z-index: -1;
+}
 #bg-video {
 
     position: fixed;
@@ -32,7 +42,7 @@ body {
 /* Place the video behind other content */
     filter: blur(10px); /* Blur the background video */
 }
-.bg-video::before {
+.bg-gif::before {
     content: "";
     display: block;
     position: absolute;
