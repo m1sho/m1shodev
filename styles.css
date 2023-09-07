@@ -20,7 +20,7 @@ body {
     background-color: transparent; /* Remove background color */
   
 }
-#bg-gif {
+.bg-gif {
     position: fixed;
     top: 0;
     left: 0;
