@@ -15,7 +15,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Use Roboto Light for a sleek look */
     margin: 0;
-    overflow: hidden; /* Prevents scrolling when the video extends beyond the viewport */
+  
     position: relative;
     background-color: transparent; /* Remove background color */
   
