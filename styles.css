@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    filter: blur(5px); /* Apply a slight blur to the background image */
+    background-filter: blur(5px); /* Apply a slight blur to the background image */
 }
 
 
