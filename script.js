@@ -1,27 +1,16 @@
-// JavaScript for opening/closing project backgrounds
-const subheadings = document.querySelectorAll('.subheading');
-const projectBackgrounds = document.querySelectorAll('.project-background');
+document.addEventListener("DOMContentLoaded", function () {
+   const webDevHeading = document.getElementById("web-development");
+   const appsHeading = document.getElementById("apps");
+   const webDevProjects = document.getElementById("web-dev-projects");
+   const appsProjects = document.getElementById("apps-projects");
 
-// Add click event listeners to subheadings
-subheadings.forEach((subheading, index) => {
-    subheading.addEventListener('click', () => {
-        // Close all project backgrounds
-        projectBackgrounds.forEach((background, bgIndex) => {
-            if (bgIndex !== index) {
-                background.style.display = 'none';
-            }
-        });
+   webDevHeading.addEventListener("click", function () {
+       webDevProjects.classList.toggle("show");
+       appsProjects.classList.remove("show"); // Hide Apps projects
+   });
 
-        // Toggle the display of the corresponding project background
-        projectBackgrounds[index].style.display =
-            projectBackgrounds[index].style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-// Close project backgrounds when the close button is clicked
-const closeButtons = document.querySelectorAll('.close-button');
-closeButtons.forEach((closeButton, index) => {
-    closeButton.addEventListener('click', () => {
-        projectBackgrounds[index].style.display = 'none';
-    });
+   appsHeading.addEventListener("click", function () {
+       appsProjects.classList.toggle("show");
+       webDevProjects.classList.remove("show"); // Hide Web Development projects
+   });
 });
