@@ -29,6 +29,11 @@ body {
     background-image: url('bg.gif'); /* Replace with the path to your GIF file */
     background-size: cover;
     z-index: -1;
+      /* Add a blur effect */
+    filter: blur(8px); /* Adjust the blur strength as needed */
+    
+    /* Slightly darken the background */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #bg-video {
