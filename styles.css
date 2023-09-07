@@ -200,9 +200,9 @@ body {
 
 /* Profile Picture */
 .profile-picture {
-    max-width: 300px; /* Set a maximum width for the profile picture */
-    width: 100%; /* Ensure it takes the full width of its container */
-    height: auto; /* Maintain aspect ratio */
+   width: 300px; /* Set a fixed width for the square profile picture */
+    height: 300px; /* Set a fixed height for the square profile picture */
+    object-fit: cover; /* Crop the image to cover the container */
     display: block; /* Center the image horizontally */
     margin: 20px auto; /* Adjust the margin as needed */
     border-radius: 50%; /* Make it a circular profile picture */
