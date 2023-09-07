@@ -6,17 +6,26 @@ body, h1, h2, h3, p {
 }
 
 /* Set futuristic fonts and colors */
-
+body::before {
+    content: "";
+    background-image: url('images/bg.jpg'); /* Replace 'images/bg.jpg' with your background image URL */
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Use Roboto Light for a sleek look */
     background-color: rgba(17, 17, 17, 0.9); /* Darken the background slightly */
-    background-image: url('images/bg.jpg'); /* Add your background image URL */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-filter: blur(5px); /* Apply a slight blur to the background image */
+  
 }
 
 
