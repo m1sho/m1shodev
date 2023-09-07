@@ -1,10 +1,8 @@
-#nav ul li a {
-    text-decoration: underline;
-}/* Reset some default styles */
+/* Reset some default styles */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    color: #333; /* Set default text color to a darker shade */
+    color: #fff; /* Set default text color to white */
 }
 
 /* Set futuristic fonts and colors */
@@ -17,7 +15,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    line-height: 1.6; /* Improve line spacing for better readability */
 }
 
 /* Header Section */
@@ -28,12 +25,10 @@ body {
 
 #header h1 {
     font-size: 3rem;
-    color: #fff; /* White header text */
 }
 
 #header p {
     font-size: 1.2rem;
-    color: #ccc; /* Light gray text color for subtext */
 }
 
 /* Navigation */
@@ -63,8 +58,7 @@ body {
 }
 
 #nav a:hover {
-    color: #ccc; /* Slight gray color on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: #fff; /* Keep font color white on hover */
 }
 
 /* Center elements horizontally */
@@ -83,7 +77,7 @@ body {
 
 .container p {
     font-size: 1.2rem;
-    color: #ccc; /* Light gray text color */
+    color: #fff; /* Set font color to white */
 }
 
 /* Footer */
@@ -95,13 +89,71 @@ body {
 
 #footer p {
     font-size: 1rem;
-    color: #ccc; /* Light gray text color */
+    color: #ccc;
 }
 
 /* Project Images */
 .project-image img {
-    max-width: 100%; /* Ensure images don't overflow their containers */
-    height: auto; /* Maintain image aspect ratio */
+    max-width: 200px; /* Set the maximum width for project images */
     display: block; /* Center the images horizontally */
     margin: 0 auto;
 }
+.project-image {
+    max-width: 300px; /* Set the maximum width for project images */
+    max-height: 300px; /* Set the maximum height for project images */
+    display: block; /* Center the images horizontally */
+    margin: 0 auto; /* Center the images horizontally */
+}
+
+
+/* Subheadings */
+.subheading {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #fff; /* Set font color to white */
+    text-decoration: underline; /* Add underline to subheadings */
+    text-align: center; /* Center subheadings */
+    padding: 10px 0; /* Add padding to subheadings */
+    display: block;
+}
+
+/* Remove max-width from Project Lists */
+.project-list {
+    text-align:center;
+    
+    padding: 20px;
+    border: none; /* Remove the border */
+    margin-top: 10px; /* Add margin to separate from the subheading */
+    color: #fff; /* Set font color to white */
+    font-size: 1.2rem; /* Slightly smaller font size for project descriptions */
+}
+
+/* Remove the blue underline for links */
+.project-list a {
+    text-decoration: none;
+    color: #fff; /* Set font color to white for all links */
+}
+
+/* Add spacing between projects */
+.project {
+    margin-bottom: 20px;
+}
+.project-list {
+   display: none; /* Hide project lists by default */
+}
+
+.project-list.show {
+   display: block; /* Show project list when the 'show' class is applied */
+}
+/* Change link color to white */
+#contact a {
+   color: #fff; /* Set font color to white for links in the "Contact" section */
+}
+/* Change link color to white */
+#about a {
+   color: #fff; /* Set font color to white for links in the "About" section */
+}
+
+
+/* ... (Other CSS rules) */
