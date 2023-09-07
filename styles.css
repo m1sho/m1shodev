@@ -139,5 +139,12 @@ body {
 .project {
     margin-bottom: 20px;
 }
+.project-list {
+   display: none; /* Hide project lists by default */
+}
+
+.project-list.show {
+   display: block; /* Show project list when the 'show' class is applied */
+}
 
 /* ... (Other CSS rules) */
