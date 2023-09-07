@@ -200,8 +200,8 @@ body {
 
 /* Profile Picture */
 .profile-picture {
-   width: 300px; /* Set a fixed width for the square profile picture */
-    height: 300px; /* Set a fixed height for the square profile picture */
+   width: 150px; /* Set a fixed width for the square profile picture */
+    height: 150px; /* Set a fixed height for the square profile picture */
     object-fit: cover; /* Crop the image to cover the container */
     display: block; /* Center the image horizontally */
     margin: 20px auto; /* Adjust the margin as needed */
