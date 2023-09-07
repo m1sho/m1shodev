@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -q; /* Place the video behind other content */
+    z-index: -1; /* Place the video behind other content */
 /* Place the video behind other content */
     filter: blur(10px); /* Blur the background video */
 }
