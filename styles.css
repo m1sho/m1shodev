@@ -6,7 +6,7 @@ body, h1, h2, h3, p {
 }
 
 /* Set futuristic fonts and colors */
-body {
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Use Roboto Light for a sleek look */
@@ -18,7 +18,7 @@ body {
     background-position: center;
     filter: blur(5px); /* Apply a slight blur to the background image */
 }
-}
+
 
 /* Header Section */
 #header {
