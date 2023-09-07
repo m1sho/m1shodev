@@ -154,6 +154,9 @@ body {
 #about a {
    color: #fff; /* Set font color to white for links in the "About" section */
 }
+#nav ul li a {
+    text-decoration: underline;
+}
 
 
 /* ... (Other CSS rules) */
