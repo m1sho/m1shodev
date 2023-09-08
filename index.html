@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
-     <div class="bg-gif"></div>
-   
+<div class="bg-gif"></div>
+
 <body>
 
     <!-- Header Section -->
@@ -30,11 +30,11 @@
     </nav>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="hidden">
         <div class="container">
             <h2>Projects</h2>
             <!-- Subheadings for categories -->
-<div class="subheading" id="web-development">Web Development <span class="dropdown-arrow">&#9662;</span></div>
+            <div class="subheading" id="web-development">Web Development <span class="dropdown-arrow">&#9662;</span></div>
 
             <!-- Web Development Projects -->
             <div class="project-list" id="web-dev-projects">
@@ -46,8 +46,8 @@
                         </div>
                         <div class="project-image">
                             <a href="https://zenit2.com" target="_blank">
-                            <img src="site1.jpg" alt="Web Project 1">
-                                </a>
+                                <img src="site1.jpg" alt="Web Project 1">
+                            </a>
                         </div>
                         <p>Modern, sleek site for Mid-Sized Construction Company.</p>
                         <br> <!-- Line break -->
@@ -57,12 +57,12 @@
                 <!-- Project 2 -->
                 <div class="project">
                     <div class="project-description">
-                            <h3>Richmond-Zhoushan Site</h3>
-                      
+                        <h3>Richmond-Zhoushan Site</h3>
+
                         <div class="project-image">
                             <a href="https://zhoushanrichmond.org" target="_blank">
-                            <img src="site2.jpg" alt="Web Project 2">
-                                </a>
+                                <img src="site2.jpg" alt="Web Project 2">
+                            </a>
                         </div>
                         <p>WordPress site for the sister city commission between Zhoushan, China, and Richmond, USA.</p>
                         <br> <!-- Line break -->
@@ -77,7 +77,7 @@
                         </div>
                         <div class="project-image">
                             <a href="https://mishov.photos" target="_blank">
-                            <img src="site3.jpg" alt="Web Project 3">
+                                <img src="site3.jpg" alt="Web Project 3">
                             </a>
                         </div>
                         <p>Modern, sleek photography portfolio using CSS, JS, and HTML.</p>
@@ -85,8 +85,8 @@
                     </div>
                 </div>
             </div>
-<!-- Apps -->
-<div class="subheading" id="apps">Apps <span class="dropdown-arrow">&#9662;</span></div>
+            <!-- Apps -->
+            <div class="subheading" id="apps">Apps <span class="dropdown-arrow">&#9662;</span></div>
 
             <!-- App Projects -->
             <div class="project-list" id="apps-projects">
@@ -98,8 +98,8 @@
                         </div>
                         <div class="project-image">
                             <a href="https://github.com/m1sho/nVert" target="_blank">
-                            <img src="app1.jpg" alt="App Project 1">
-                                </a>
+                                <img src="app1.jpg" alt="App Project 1">
+                            </a>
                         </div>
                         <p>Python app using numpy and other image libraries to invert a scanned negative quicker than you can rename a file.</p>
                         <br> <!-- Line break -->
@@ -114,8 +114,8 @@
                         </div>
                         <div class="project-image">
                             <a href="https://github.com/m1sho/MetaCleanPy" target="_blank">
-                            <img src="app2.jpg" alt="App Project 2">
-                                </a>
+                                <img src="app2.jpg" alt="App Project 2">
+                            </a>
                         </div>
                         <p>Python metadata cleaner using Tkinter.</p>
                         <br> <!-- Line break -->
@@ -130,7 +130,7 @@
                         </div>
                         <div class="project-image">
                             <a href="https://github.com/m1sho/KazakhWotD" target="_blank">
-                            <img src="ap3.jpg" alt="App Project 3">
+                                <img src="ap3.jpg" alt="App Project 3">
                             </a>
                         </div>
                         <p>"Word of the Day" Python widget for learners of Kazakh with words automatically translated and stored in a local file.</p>
@@ -142,28 +142,27 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        
+    <section id="about" class="hidden">
+
         <div class="container">
             <h2>About Me</h2>
-              <img src="me.jpg" alt="Profile Picture" class="profile-picture">
-      
-     
+            <img src="me.jpg" alt="Profile Picture" class="profile-picture">
+
             <p>Tinkerer and Creator in trades including Programming, Web Development, Film Photography, and Vintage Audio.</p><br>
-       <p><a href="https://mishov.photos" target="_blank" style="color: #fff;text-decoration: underline;">Photography Site</a></p>
+            <p><a href="https://mishov.photos" target="_blank" style="color: #fff;text-decoration: underline;">Photography Site</a></p>
             <p><a href="ArrakiCV.pdf" download>Download Resume (PDF)</a></p>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-       <div class="container">
-        <h2>Contact</h2>
-        <p><a href="mailto:jeanmichaelarraki@gmail.com">Email</a></p>
-        <p><a href="https://www.linkedin.com/in/jean-michaelarraki/">LinkedIn</a></p>
-        <p><a href="https://github.com/m1sho">Github</a></p>
-        <!-- Add your contact information and form here -->
-    </div>
+    <section id="contact" class="hidden">
+        <div class="container">
+            <h2>Contact</h2>
+            <p><a href="mailto:jeanmichaelarraki@gmail.com">Email</a></p>
+            <p><a href="https://www.linkedin.com/in/jean-michaelarraki/">LinkedIn</a></p>
+            <p><a href="https://github.com/m1sho">Github</a></p>
+            <!-- Add your contact information and form here -->
+        </div>
     </section>
 
     <!-- Footer Section -->
@@ -173,5 +172,19 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script>
+        // JavaScript to toggle section visibility when menu links are clicked
+        document.querySelectorAll('#nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = e.target.getAttribute('href').substring(1);
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.add('hidden');
+                });
+                document.getElementById(targetId).classList.remove('hidden');
+            });
+        });
+    </script>
 </body>
+
 </html>
