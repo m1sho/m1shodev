@@ -134,6 +134,7 @@ body::before {
     background-color: transparent; /* Make the background color transparent */
     padding: 20px 0;
     text-align: center;
+    position:0
 }
 
 #footer p {
