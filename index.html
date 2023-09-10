@@ -173,17 +173,32 @@
     <!-- JavaScript -->
     <script src="script.js"></script>
     <script>
-        // JavaScript to toggle section visibility when menu links are clicked
-        document.querySelectorAll('#nav a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = e.target.getAttribute('href').substring(1);
-                document.querySelectorAll('section').forEach(section => {
-                    section.classList.add('hidden');
-                });
-                document.getElementById(targetId).classList.remove('hidden');
-            });
+       // JavaScript to toggle section visibility when menu links are clicked
+document.querySelectorAll('#nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href').substring(1);
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
         });
+        document.getElementById(targetId).classList.remove('hidden');
+    });
+});
+
+// Add event listener to close dropdown items when clicking outside
+document.addEventListener('click', (e) => {
+    const nav = document.getElementById('nav');
+    const target = e.target;
+
+    // Check if the click target is outside of the #nav element
+    if (!nav.contains(target)) {
+        // Close the dropdown items by adding the 'hidden' class
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+        });
+    }
+});
+
     </script>
 </body>
 
