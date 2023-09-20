@@ -154,6 +154,9 @@ body::before {
     max-height: 300px; /* Set the maximum height for project images */
     display: block; /* Center the images horizontally */
     margin: 0 auto; /* Center the images horizontally */
+    border: 2px solid white; /* Add a 2px solid white border to these images */
+    padding: 5px; /* Add some padding to separate the border from the image */
+}
 }.project-image a:hover img {
     transform: scale(1.05); /* Scale the image slightly on hover */
     filter: brightness(90%); /* Darken the image on hover */
