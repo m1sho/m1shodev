@@ -176,7 +176,7 @@ body::before {
     text-align: center; /* Center subheadings */
     padding: 10px 0; /* Add padding to subheadings */
     display: block;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+ 
 }
 
 /* Remove max-width from Project Lists */
