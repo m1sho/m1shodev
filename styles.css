@@ -70,6 +70,7 @@ body::before {
 #header {
     text-align: center;
     padding: 100px 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 #header h1 {
@@ -104,7 +105,7 @@ body::before {
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+
 }
 
 #nav a:hover {
@@ -215,8 +216,39 @@ body::before {
    color: #fff; /* Set font color to white for links in the "About" section */
 }
 #nav ul li a {
-    text-decoration: underline;
+     border-bottom: 0.5px solid #fff;
 }
+/* Your existing CSS styles */
+
+/* Subheading typing animation */
+#subheading {
+    text-align: center; /* Center the text initially */
+    overflow: hidden; /* Hide overflowing text */
+
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin: 0 auto; /* Center the element horizontally */
+}
+
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blinking-cursor {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
 /* Profile Image Styles */
 
 /* Profile Picture */

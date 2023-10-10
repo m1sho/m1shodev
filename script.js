@@ -1,3 +1,7 @@
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const webDevHeading = document.getElementById("web-development");
     const appsHeading = document.getElementById("apps");
@@ -14,74 +18,44 @@ document.addEventListener("DOMContentLoaded", function () {
         webDevProjects.classList.remove("show"); // Hide Web Development projects
     });
 
-    let clickCount = 0; // Initialize click count
 
-    // Function to toggle game visibility
-    function toggleGameVisibility() {
-        const gameContainer = document.getElementById('game-container');
-        if (gameContainer.style.display === 'block') {
-            gameContainer.style.display = 'none';
-        } else {
-            gameContainer.style.display = 'block';
-            generateBlocks();
-            renderGame();
-        }
-    }
+// Subheading Typing Animation Logic
 
-    // Event listener for "Jean Arraki" clicks
-    document.getElementById('jean-arraki').addEventListener('click', () => {
-        clickCount++;
-        if (clickCount >= 6) {
-            toggleGameVisibility();
-            clickCount = 0; // Reset click count
-        }
-    });
+    const subheading = document.getElementById("subheading");
+    const textArray = ["Web Developer", "Programmer", "Photographer"];
+    let index = 0;
+    let charIndex = 0;
+    let isTyping = true;
 
-    // ASCII Platformer Game Logic
-    const gameContainer = document.getElementById('game-container');
-    const player = document.createElement('div');
-    const blocks = [];
+    function type() {
+        const currentText = textArray[index];
+        const typingDelay = 150;
 
-    player.className = 'player';
-    player.style.bottom = '0';
-    player.style.left = '0';
+        if (isTyping) {
+            const letter = currentText.charAt(charIndex);
+            subheading.innerHTML = currentText.substr(0, charIndex) + `<span class="blinking-cursor">|</span>`;
+            charIndex++;
 
-    gameContainer.appendChild(player);
-
-    function generateBlocks() {
-        for (let i = 0; i < 10; i++) {
-            const block = document.createElement('div');
-            block.className = 'block';
-            block.style.bottom = '20px';
-            block.style.left = `${Math.random() * 90 + 5}%`;
-            blocks.push(block);
-            gameContainer.appendChild(block);
-        }
-    }
-
-    function renderGame() {
-        let playerPosition = 0;
-
-        setInterval(() => {
-            player.style.left = `${playerPosition}%`;
-            playerPosition += 1;
-            if (playerPosition > 100) {
-                playerPosition = 0;
+            if (charIndex <= currentText.length) {
+                setTimeout(type, typingDelay);
+            } else {
+                isTyping = false;
+                setTimeout(type, 1000);
             }
+        } else {
+            subheading.innerHTML = currentText.substr(0, charIndex) + `<span class="blinking-cursor">|</span>`;
+            charIndex--;
 
-            blocks.forEach((block) => {
-                const blockPosition = parseFloat(block.style.left);
-                if (
-                    playerPosition < blockPosition + 10 &&
-                    playerPosition + 10 > blockPosition &&
-                    parseFloat(player.style.bottom) < parseFloat(block.style.bottom) + 10
-                ) {
-                    toggleGameVisibility();
-                }
-            });
-        }, 100);
+            if (charIndex >= 0) {
+                setTimeout(type, 50);
+            } else {
+                isTyping = true;
+                index = (index + 1) % textArray.length;
+                charIndex = 0;
+                setTimeout(type, 1000);
+            }
+        }
     }
 
-    // Other JavaScript code for your website
-    // ...
+    type();
 });
